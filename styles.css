@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+  font-family: "Chocolate Classical Sans", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.content{
+    background: #1c92d2;  
+    background: linear-gradient(to top, #1c92d2, #f3fdff); 
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1290px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header{
+    border:1px solid black
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1b1b1b;
+    gap:0.625rem;
+}
+
+.logo-icon{
+    height:1.875rem;
+    width:1.983;
+}
+
+.nav{    
+    gap:1.5rem;
+    display: none;
+}
+.nav-link{
+    color:#718096;
+    font-size:1.125rem;
+    font-weight: 600;
+    transition: color 0.1s;
+}
+
+
+.nav-link:hover{
+    color: #1c92d2;
+}
+
+
+.contact-button{
+    background-color: #1c92d2;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1.5rem;
+    color: #f3fdff;
+    transform:all 0.4s;
+    font-size: 1rem;
+    font-weight: 600;
+    display: none;
+}
+
+@media screen and (min-width:805px) {
+    .nav{
+        display: flex;
+    }
+    .contact-button{
+        display: block;
+    }
+}
+
+.contact-button:hover{
+    background-color: #167cb3;
+}
+
+
+.menu-button{
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #fdfafa;
+    padding: 0.2rem 0.4rem;
+
+}
+
+.menu-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media screen and (max-width:805px) {
+    .menu-button{
+        display: block;
+    }
+}
+
